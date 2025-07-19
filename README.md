@@ -16,7 +16,7 @@ A modern, responsive portfolio website showcasing expertise in cloud computing, 
 - **Framework**: Next.js 14 with App Router
 - **Language**: TypeScript
 - **Styling**: Tailwind CSS
-- **Deployment**: Vercel (recommended)
+- **Deployment**: GitHub Pages
 - **Package Manager**: npm
 
 ## 📋 Sections
@@ -99,6 +99,40 @@ A modern, responsive portfolio website showcasing expertise in cloud computing, 
 npm run build
 npm start
 ```
+
+## 🌐 Deployment to GitHub Pages
+
+This project is configured for automatic deployment to GitHub Pages using GitHub Actions.
+
+### Automatic Deployment
+
+1. **Push to main branch**: The GitHub Actions workflow will automatically build and deploy your site
+2. **Access your site**: Your portfolio will be available at `https://yourusername.github.io/repository-name`
+
+### Manual Deployment
+
+If you prefer manual deployment:
+
+```bash
+# Install dependencies
+npm install
+
+# Build and export static files
+npm run export
+
+# Deploy to GitHub Pages (requires gh-pages package)
+npm run deploy
+```
+
+### GitHub Pages Setup
+
+1. Go to your repository settings
+2. Navigate to "Pages" section
+3. Set source to "Deploy from a branch"
+4. Select "gh-pages" branch and "/ (root)" folder
+5. Click "Save"
+
+Your site will be available at: `https://yourusername.github.io/repository-name`
 
 ## 📁 Project Structure
 
