@@ -153,10 +153,10 @@ const Projects = () => {
             My Projects
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
-            A showcase of real-world applications at the intersection of cloud technologies, 
+            A showcase of real-world applications at the intersection of cloud technologies,
             artificial intelligence, and modern web development
           </p>
-          
+
           {/* Filter buttons */}
           <div className="flex flex-wrap justify-center gap-4">
             <button className="bg-purple-600 text-white px-6 py-2 rounded-full font-medium">
