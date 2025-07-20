@@ -104,12 +104,32 @@ npm start
 
 This project is configured for automatic deployment to GitHub Pages using GitHub Actions.
 
+### GitHub Pages Setup (Important!)
+
+**Before pushing your code, configure GitHub Pages:**
+
+1. Go to your repository on GitHub
+2. Click on **Settings** tab
+3. Scroll down to **Pages** section
+4. Under **Source**, select **"GitHub Actions"** (NOT "Deploy from a branch")
+5. Save the settings
+
 ### Automatic Deployment
 
-1. **Push to main branch**: The GitHub Actions workflow will automatically build and deploy your site
-2. **Access your site**: Your portfolio will be available at `https://yourusername.github.io/repository-name`
+1. **Push to master/main branch**: The GitHub Actions workflow will automatically build and deploy your site
+2. **Wait for deployment**: Check the "Actions" tab to see the deployment progress
+3. **Access your site**: Your portfolio will be available at `https://ggrao1.github.io/ggrao-website`
 
-### Manual Deployment
+### Troubleshooting
+
+If GitHub Pages shows README instead of your website:
+
+1. **Check GitHub Pages source**: Ensure it's set to "GitHub Actions" not "Deploy from a branch"
+2. **Check Actions tab**: Look for any failed deployments
+3. **Verify build**: The workflow should create an `index.html` file in the root of the deployed content
+4. **Clear cache**: Try accessing your site in an incognito/private browser window
+
+### Manual Deployment (Alternative)
 
 If you prefer manual deployment:
 
@@ -124,15 +144,14 @@ npm run export
 npm run deploy
 ```
 
-### GitHub Pages Setup
+### Important Notes
 
-1. Go to your repository settings
-2. Navigate to "Pages" section
-3. Set source to "Deploy from a branch"
-4. Select "gh-pages" branch and "/ (root)" folder
-5. Click "Save"
+- **Repository name**: Make sure your repository name matches the URL structure
+- **Branch**: This workflow supports both `master` and `main` branches
+- **Build time**: Initial deployment may take 5-10 minutes
+- **Custom domain**: You can configure a custom domain in repository settings
 
-Your site will be available at: `https://yourusername.github.io/repository-name`
+Your site will be available at: `https://ggrao1.github.io/ggrao-website`
 
 ## 📁 Project Structure
 
