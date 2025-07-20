@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import type { Metadata } from 'next'
+import { useComponentTracking, useFormTracking, useInteractionTracking } from '@/hooks/useAnalytics'
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -13,17 +14,32 @@ const Contact = () => {
   })
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle')
+  
+  // Analytics hooks
+  useComponentTracking('contact_page')
+  const { trackFormStart, trackFormSubmit, trackFieldFocus } = useFormTracking()
+  const { trackClick } = useInteractionTracking()
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+    const { name, value } = e.target
+    
+    // Track form field focus on first interaction
+    if (formData[name as keyof typeof formData] === '' && value !== '') {
+      trackFieldFocus(name, 'contact_form')
+    }
+    
     setFormData(prev => ({
       ...prev,
-      [e.target.name]: e.target.value
+      [name]: value
     }))
   }
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setIsSubmitting(true)
+    
+    // Track form submission start
+    trackFormSubmit('contact_form', true)
     
     // Simulate form submission (replace with actual API call)
     setTimeout(() => {

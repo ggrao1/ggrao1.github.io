@@ -1,3 +1,7 @@
+'use client'
+
+import { useComponentTracking } from '@/hooks/useAnalytics'
+
 const skillsData = {
   'Programming Languages': [
     { name: 'JavaScript', level: 95, description: 'Node.js, ES6+, Full-stack development' },
@@ -38,6 +42,9 @@ const skillsData = {
 }
 
 const Skills = () => {
+  // Track skills section view
+  useComponentTracking('skills_section')
+  
   return (
     <section className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

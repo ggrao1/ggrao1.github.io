@@ -2,9 +2,15 @@
 
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
+import { useComponentTracking, useInteractionTracking } from '@/hooks/useAnalytics'
 
 const Hero = () => {
   const [currentText, setCurrentText] = useState(0)
+  const { trackClick } = useInteractionTracking()
+  
+  // Track hero section view
+  useComponentTracking('hero_section')
+  
   const texts = [
     'Cloud Specialist & Generative AI Engineer',
     'Software Engineer',
@@ -17,7 +23,7 @@ const Hero = () => {
       setCurrentText((prev) => (prev + 1) % texts.length)
     }, 3000)
     return () => clearInterval(interval)
-  }, [])
+  }, [texts.length])
 
   return (
     <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-primary-500 via-primary-600 to-secondary-600 relative overflow-hidden">
@@ -54,12 +60,14 @@ const Hero = () => {
             <Link
               href="/projects"
               className="bg-white text-primary-600 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-primary-50 transition-all duration-300 transform hover:scale-105 shadow-lg"
+              onClick={() => trackClick('hero_projects_button', 'navigation')}
             >
               View My Projects
             </Link>
             <Link
               href="/contact"
               className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-primary-600 transition-all duration-300 transform hover:scale-105"
+              onClick={() => trackClick('hero_contact_button', 'navigation')}
             >
               Get In Touch
             </Link>

@@ -109,16 +109,16 @@ const About = () => {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold mb-2">Google Cloud India Summit 2025</h3>
+                    <h3 className="text-xl font-semibold mb-2">Google Cloud Partner Representative - India Summit 2025</h3>
                     <p className="text-primary-100 mb-3">
-                      Represented Niveus Solutions (NTT Data company) at Google Cloud India Summit, connecting with industry leaders 
-                      and showcasing expertise in AI advancements within the Google Cloud ecosystem.
+                      Represented Niveus Solutions (Part of NTT Data) as Google Cloud Premium Partner 
+                      at Google Cloud India Summit 2025, connecting with industry leaders and showcasing AI and cloud architecture expertise.
                     </p>
                     <div className="flex items-center text-primary-100 text-sm">
                       <svg className="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM7 10h5v5H7z"/>
                       </svg>
-                      January 2025
+                      May 2025
                     </div>
                   </div>
                 </div>

@@ -202,11 +202,11 @@ const certifications = [
     badge: '🏅'
   },
   {
-    title: 'Google Cloud Partner - Speaker',
+    title: 'Google Cloud Partner Representative',
     issuer: 'Google Cloud',
     date: '2025',
-    description: 'Presented at Google Cloud India Summit 2025 on AI and cloud architectures',
-    badge: '🎤'
+    description: 'Represented Niveus Solutions (Part of NTT Data) as Google Cloud Premium Partner at Google Cloud India Summit 2025',
+    badge: '🤝'
   }
 ]
 

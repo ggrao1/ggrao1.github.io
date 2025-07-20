@@ -9,6 +9,25 @@ export const metadata: Metadata = {
 const projects = [
   {
     id: 1,
+    title: 'GenAI-Powered Insurance Operations Chatbot',
+    description: 'Architected and developed an AI-powered chatbot for a leading insurance company to streamline operations, automate data extraction, and enhance product knowledge access.',
+    longDescription: 'Transforming business operations with GenAI chatbot for a leading insurance company. The client faced challenges in streamlining operations, accessing product information, and managing HR support. We empowered them with an AI-powered chatbot that provides instant, accurate responses, automating data extraction, enhancing product knowledge, and simplifying HR policy access. The outcome: Increased efficiency, reduced manual effort, and a smarter, more scalable solution driving growth and decision-making.',
+    technologies: ['Generative AI', 'Natural Language Processing', 'Python', 'Cloud AI Services', 'Insurance Domain APIs', 'Enterprise Integration'],
+    challenges: 'Complex insurance product information management, HR policy accessibility, and automating data extraction from various enterprise systems.',
+    solutions: 'Designed intelligent chatbot architecture with domain-specific training, implemented seamless enterprise system integration, and created intuitive conversation flows for complex insurance operations.',
+    outcomes: 'Increased operational efficiency, reduced manual effort significantly, improved employee productivity, and enabled faster decision-making across the organization.',
+    image: '/api/placeholder/600/400',
+    github: '',
+    demo: '',
+    featured: true,
+    category: 'Enterprise AI',
+    status: 'Production',
+    clientWork: true,
+    company: 'Niveus Solutions (Part of NTT Data)',
+    linkedinPost: 'https://www.linkedin.com/posts/niveus-solutions_cs-gen-ai-powered-chatbot-for-insurance-activity-7328652891647307777-SHkR?utm_source=share&utm_medium=member_desktop&rcm=ACoAACSRWwgBXCeWxrtzY8Uq5B5zQt3wP2o-oz0'
+  },
+  {
+    id: 2,
     title: 'Generative AI-Powered Competitor Analysis Tool',
     description: 'Designed and developed an application that uses any SQL database. This tool interprets user queries in natural language, generates SQL queries to retrieve relevant data, and displays visualizations.',
     longDescription: 'A sophisticated application that interprets user queries in natural language, generates SQL queries to retrieve relevant data, and subsequently uses the SQL results to display visualizations. The custom fine-tuned model is used for improved accuracy of SQL generation. Built for top-tier financial institutions across India and Southeast Asia.',
@@ -17,14 +36,14 @@ const projects = [
     solutions: 'Implemented custom fine-tuned models for improved SQL generation accuracy and designed secure data processing pipelines.',
     outcomes: 'Successfully deployed across top-tier private sector banks, enabling natural language-based data analysis and business intelligence.',
     image: '/api/placeholder/600/400',
-    github: 'https://github.com/gauthamgrao/genai-competitor-analysis',
+    github: 'https://github.com/ggrao1/genai-competitor-analysis',
     demo: 'https://competitor-analysis-demo.com',
     featured: true,
     category: 'AI/ML',
     status: 'Production'
   },
   {
-    id: 2,
+    id: 3,
     title: 'VS Code Extension for Code Generation',
     description: 'Developed a VS Code extension utilizing Gemini 1.5 Flash, Code Bison, Code Geko, Gemini 2.0 and Claude Sonet 3.7 models for comprehensive code assistance.',
     longDescription: 'A comprehensive VS Code extension that provides features like auto-completion, code generation, test case generation, documentation generation and commit message generation. Utilizes multiple LLM models including Gemini 1.5 Flash, Code Bison, Code Geko, Gemini 2.0 and Claude Sonet 3.7 for optimal performance.',
@@ -33,14 +52,14 @@ const projects = [
     solutions: 'Developed intelligent model selection algorithms and efficient caching mechanisms for optimal performance across different coding scenarios.',
     outcomes: 'Enhanced developer productivity with comprehensive code assistance features and multi-model support.',
     image: '/api/placeholder/600/400',
-    github: 'https://github.com/gauthamgrao/vscode-genai-extension',
+    github: 'https://github.com/ggrao1/vscode-genai-extension',
     demo: 'https://marketplace.visualstudio.com/items?itemName=gauthamgrao.genai-assistant',
     featured: true,
     category: 'Developer Tools',
     status: 'Production'
   },
   {
-    id: 3,
+    id: 4,
     title: 'RAG Framework & SaaS Platform',
     description: 'Developed a cost-effective RAG framework and SaaS platform by designing the architecture, selecting vector stores, and implementing efficient chunking mechanisms.',
     longDescription: 'A comprehensive RAG framework and SaaS platform that optimizes retrieval accuracy and performance while significantly lowering operating costs compared to market alternatives. Features efficient resource use, optimized algorithms, and scalable architecture for enterprise deployment.',
@@ -49,14 +68,14 @@ const projects = [
     solutions: 'Implemented efficient chunking mechanisms, optimized vector store selection, and designed cost-effective architecture with intelligent resource management.',
     outcomes: 'Achieved significant cost reduction compared to market alternatives while maintaining high retrieval accuracy and performance.',
     image: '/api/placeholder/600/400',
-    github: 'https://github.com/gauthamgrao/rag-saas-platform',
+    github: 'https://github.com/ggrao1/rag-saas-platform',
     demo: 'https://rag-platform-demo.com',
     featured: true,
     category: 'SaaS',
     status: 'Production'
   },
   {
-    id: 4,
+    id: 5,
     title: 'Gen AI Code Migration (Ionic to React Native)',
     description: 'Implemented a Gen AI solution to automate the conversion of Ionic applications to React Native, minimizing manual effort and accelerating the migration process.',
     longDescription: 'An innovative Gen AI solution that automates the conversion of Ionic applications to React Native. The system analyzes application structure, components, and business logic to generate equivalent React Native code, significantly reducing manual migration effort.',
@@ -65,14 +84,14 @@ const projects = [
     solutions: 'Developed sophisticated code analysis algorithms and AI-powered conversion logic to ensure accurate migration with minimal manual intervention.',
     outcomes: 'Significantly reduced migration time and effort while maintaining application functionality and performance.',
     image: '/api/placeholder/600/400',
-    github: 'https://github.com/gauthamgrao/ionic-reactnative-migration',
+    github: 'https://github.com/ggrao1/ionic-reactnative-migration',
     demo: 'https://migration-tool-demo.com',
     featured: false,
     category: 'Developer Tools',
     status: 'Production'
   },
   {
-    id: 5,
+    id: 6,
     title: 'Generic Document Validator',
     description: 'Built with Gemini model which helps to create multiple validation profiles and validate documents as a service with REST API integration options.',
     longDescription: 'A comprehensive document validation service built with Gemini model that allows creation of multiple validation profiles and provides document validation as a service. Features REST API integration options to integrate document validation service into existing application pipelines.',
@@ -81,14 +100,14 @@ const projects = [
     solutions: 'Leveraged Gemini model capabilities to build intelligent validation logic with customizable profiles and robust API infrastructure.',
     outcomes: 'Enabled automated document validation across various application pipelines with high accuracy and flexibility.',
     image: '/api/placeholder/600/400',
-    github: 'https://github.com/gauthamgrao/document-validator',
+    github: 'https://github.com/ggrao1/document-validator',
     demo: 'https://doc-validator-api.com',
     featured: false,
     category: 'API',
     status: 'Production'
   },
   {
-    id: 6,
+    id: 7,
     title: 'SOW Compliance and Risk Assessment Tool',
     description: 'Created a tool to automate the validation of Statements of Work (SOWs) against project requirements and identify potential risks with reusable accelerators.',
     longDescription: 'An intelligent tool that automates the validation of Statements of Work (SOWs) against project requirements, identifies potential risks, and recommends reusable accelerators as part of Gen AI platform\'s SOW validation and RAG system. Streamlines project planning and risk management processes.',
@@ -97,7 +116,7 @@ const projects = [
     solutions: 'Developed intelligent document analysis using RAG systems and generative AI to provide comprehensive SOW validation and risk assessment.',
     outcomes: 'Automated SOW validation process, reduced compliance risks, and improved project planning efficiency.',
     image: '/api/placeholder/600/400',
-    github: 'https://github.com/gauthamgrao/sow-compliance-tool',
+    github: 'https://github.com/ggrao1/sow-compliance-tool',
     demo: 'https://sow-validator-demo.com',
     featured: true,
     category: 'AI/ML',
@@ -113,7 +132,7 @@ const projects = [
     solutions: 'Implemented robust PDF processing pipelines, secure data handling, and efficient BigQuery integration for structured data storage.',
     outcomes: 'Successfully deployed across multiple top-tier banks, enabling automated financial data processing and analysis.',
     image: '/api/placeholder/600/400',
-    github: 'https://github.com/gauthamgrao/financial-data-platform',
+    github: 'https://github.com/ggrao1/financial-data-platform',
     demo: 'https://financial-platform-demo.com',
     featured: true,
     category: 'Enterprise',
@@ -192,7 +211,7 @@ const Projects = () => {
               Start a Conversation
             </a>
             <a
-              href="https://github.com/gauthamgrao"
+              href="https://github.com/ggrao1"
               target="_blank"
               rel="noopener noreferrer"
               className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-purple-600 transition-colors duration-200"
