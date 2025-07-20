@@ -106,14 +106,14 @@ const Contact = () => {
               </div>
 
               {/* Availability */}
-              <div className="mt-8 p-4 bg-blue-50 rounded-lg">
+              <div className="mt-8 p-4 bg-green-50 rounded-lg">
                 <div className="flex items-center gap-2 mb-2">
-                  <div className="w-3 h-3 bg-blue-500 rounded-full"></div>
-                  <span className="font-semibold text-blue-800">Available for Projects</span>
+                  <div className="w-3 h-3 bg-green-500 rounded-full"></div>
+                  <span className="font-semibold text-green-800">Open to Job Opportunities</span>
                 </div>
-                <p className="text-sm text-blue-700">
-                  Currently working at Niveus Solutions and open to exciting collaborations. 
-                  Based in Mangalore, India with remote work capabilities.
+                <p className="text-sm text-green-700">
+                  Actively seeking exciting career opportunities in AI/ML engineering and cloud migration. 
+                  Open to remote, hybrid, or relocation opportunities worldwide.
                 </p>
               </div>
             </div>

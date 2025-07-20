@@ -22,13 +22,13 @@ const About = () => {
             <div className="space-y-6 text-gray-700 leading-relaxed">
               <p>
                 I'm a results-driven Software Engineer with over 6+ years of experience specializing in cloud and 
-                Generative AI solutions. Currently working as a Cloud Specialist at Niveus Solutions Pvt. Ltd. in Mangalore, 
-                I have proven ability to solve complex problems and drive business value through innovative technology solutions.
+                Generative AI solutions. With extensive experience in cloud migration and AI/ML engineering, 
+                I'm actively seeking exciting career opportunities with innovative companies that push the boundaries of technology.
               </p>
               
               <p>
                 My expertise spans developing LLM applications, RAG frameworks, and automating processes across multiple 
-                cloud platforms including GCP, AWS, and Azure. I'm proficient in JavaScript, Python, and TypeScript, 
+                cloud platforms including GCP, AWS, and Azure. I'm proficient in JavaScript, Python, and TypeScript, cloud migration,
                 with deep experience in Vertex AI and modern cloud architectures.
               </p>
               
@@ -48,7 +48,7 @@ const About = () => {
               <div className="border-l-4 border-purple-600 pl-6">
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">Cloud Specialist - Niveus Solutions (2021-Present)</h3>
                 <p className="text-gray-700">
-                  Leading development of Generative AI solutions including competitor analysis tools, RAG frameworks, 
+                  Led development of Generative AI solutions including competitor analysis tools, RAG frameworks, 
                   and LLM applications. Successfully delivered end-to-end applications for top-tier financial institutions 
                   across India and Southeast Asia, focusing on secure and scalable cloud architectures.
                 </p>

@@ -25,6 +25,14 @@ interface InstagramEmbed {
 
 const InstagramProfile = () => {
   const [embedsLoaded, setEmbedsLoaded] = useState(false)
+  const [imageError, setImageError] = useState(false)
+
+  // Use local profile image for better reliability in static hosting
+  // To update: download new profile pic from Instagram and replace /public/profile-pic.jpg
+  const profileImageUrl = "/profile-pic.jpg"
+  
+  // Fallback profile image (placeholder)
+  const fallbackImageUrl = "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face"
 
   // Load Instagram embed script
   useEffect(() => {
@@ -64,11 +72,13 @@ const InstagramProfile = () => {
           <div className="w-16 h-16 rounded-full bg-gradient-to-tr from-purple-500 via-pink-500 to-orange-500 p-0.5">
             <div className="w-full h-full rounded-full bg-white flex items-center justify-center">
               <Image
-                src="https://instagram.fblr20-3.fna.fbcdn.net/v/t51.2885-19/420690413_796174808981625_8699232698502744540_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_ht=instagram.fblr20-3.fna.fbcdn.net&_nc_cat=109&_nc_oc=Q6cZ2QHNskPMw55AQrqaUuBpiopYgVIA3Kdf94NkWC47cWGPL-uWgj_4G_F3psSV47UykTW9quNos2vF0nY35UA_cxVd&_nc_ohc=HaFie0VlFtYQ7kNvwGUNzuB&_nc_gid=R-UTJeQ9-9CKw405H3KexA&edm=AA5fTDYBAAAA&ccb=7-5&oh=00_AfQbQANmCA-WiCWJH1pjT_PwDWRd58aVosinVnuY4fAG-A&oe=6881D713&_nc_sid=7edfe2"
+                src={imageError ? fallbackImageUrl : profileImageUrl}
                 alt="@g_g_rao"
                 width={60}
                 height={60}
                 className="w-full h-full rounded-full object-cover"
+                onError={() => setImageError(true)}
+                unoptimized={true}
               />
             </div>
           </div>

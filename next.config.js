@@ -26,7 +26,19 @@ const nextConfig = {
             },
             {
                 protocol: 'https',
-                hostname: '*.fna.fbcdn.net',
+                hostname: '*.fbcdn.net',
+                port: '',
+                pathname: '/**',
+            },
+            {
+                protocol: 'https',
+                hostname: 'instagram.fblr20-3.fna.fbcdn.net',
+                port: '',
+                pathname: '/**',
+            },
+            {
+                protocol: 'https',
+                hostname: 'scontent.cdninstagram.com',
                 port: '',
                 pathname: '/**',
             },

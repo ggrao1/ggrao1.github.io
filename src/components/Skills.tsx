@@ -80,35 +80,6 @@ const Skills = () => {
             </div>
           ))}
         </div>
-        
-        <div className="mt-16 bg-gradient-to-r from-primary-600 to-secondary-600 rounded-xl p-8 text-white text-center">
-          <h3 className="text-2xl font-bold mb-4">Achievements & Certifications</h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="flex items-center justify-center gap-4">
-              <div className="w-12 h-12 bg-white bg-opacity-20 rounded-full flex items-center justify-center">
-                <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M12 2L3.09 8.26L12 14.5L20.91 8.26L12 2ZM12 16.5L3.09 10.24L12 16.5L20.91 10.24L12 16.5Z"/>
-                </svg>
-              </div>
-              <div className="text-left">
-                <div className="font-bold">Google Cloud Certified</div>
-                <div className="text-primary-100">Associate Cloud Engineer</div>
-              </div>
-            </div>
-            
-            <div className="flex items-center justify-center gap-4">
-              <div className="w-12 h-12 bg-white bg-opacity-20 rounded-full flex items-center justify-center">
-                <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M12 2L13.09 8.26L12 14.5L10.91 8.26L12 2ZM21 12L14.74 13.09L8.5 12L14.74 10.91L21 12Z"/>
-                </svg>
-              </div>
-              <div className="text-left">
-                <div className="font-bold">Google Cloud Partner</div>
-                <div className="text-blue-100">India Summit 2025 Speaker</div>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   )

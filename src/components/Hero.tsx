@@ -46,8 +46,8 @@ const Hero = () => {
           
           <p className="text-lg text-primary-200 mb-12 max-w-3xl mx-auto">
             Results-driven Software Engineer specializing in cloud and Generative AI solutions. 
-            Expertise in developing LLM applications, RAG frameworks, and delivering end-to-end applications 
-            for top-tier financial institutions.
+            Expertise in AI/ML engineering, and developing LLM applications. 
+            Actively seeking exciting career opportunities in innovative tech companies.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
